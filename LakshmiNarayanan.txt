@@ -1,3 +1,5 @@
+
+Tasks - July 20, 2021
 I.Five differences between Browser JS(console) v Nodejs
 
     1.Application:
@@ -100,6 +102,56 @@ III.Executtion of the bellow code in browser console:
 
          typeof(NaN) 
          "number" 
+
+Task - July 21, 2021
+   1)
+    var obj = [
+          { person: "Name 1", age: "2", company: "GUVI" },
+          { person: "Name 2", age: "5", company: "GUVI geek" },
+          { person: "Name 3", age: "8", company: "GUVI geek network" },
+        ]
+    use the above JSON to iterate over all for loops (for, for in, for of, forEach)
+    
+By using for loop;-
+var obj = [
+{ person: "Vinod", age: "25", company: "GUVI" },
+{ person: "Kavin", age: "34", company: "GUVI geek" },
+{ person: "Rajath", age: "28", company: "GUVI geek network" },
+]
+for(let i =0;i<obj.length;i++)
+{
+console.log(obj[i]);
+}
+
+By using for in loop:-
+var obj = [
+{ person: "Vinod", age: "25", company: "GUVI" },
+{ person: "Kavin", age: "34", company: "GUVI geek" },
+{ person: "Rajath", age: "28", company: "GUVI geek network" },
+]
+for(var property in obj)
+{
+console.log(obj[property]);
+}
+
+By using for of loop:-
+var obj = [
+{ person: "Vinod", age: "25", company: "GUVI" },
+{ person: "Kavin", age: "34", company: "GUVI geek" },
+{ person: "Rajath", age: "28", company: "GUVI geek network" },
+]
+for(var property of obj)
+{
+console.log(property);
+}
+
+By using for each loop:-
+var obj = [
+{ person: "Vinod", age: "25", company: "GUVI" },
+{ person: "Kavin", age: "34", company: "GUVI geek" },
+{ person: "Rajath", age: "28", company: "GUVI geek network" },
+]
+obj.forEach(key => console.log(key));
 
 
    
